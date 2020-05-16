@@ -24,3 +24,5 @@
  </tr>
 </table>
 <hr>
+<img src="https://github.com/MedAmineFouzai/Simple_CRUD_API_MongoDB/Captures/img.jpg" >
+<h3><a href="https://pymongo.readthedocs.io/en/stable/">PyMongo</a> is a Python distribution containing tools for working with <a href="https://www.mongodb.com/" >MongoDB</a>, and is the recommended way to work with MongoDB from Python.<h3>
