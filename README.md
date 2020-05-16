@@ -4,7 +4,7 @@
 <h1>#setup:</h1>
 <table>
 <tr>
-<td> 1)  git clone https://github.com/MedAmineFouzai/Simple_CRUD_API_SQLITE3 </td>
+<td> 1)  git clone https://github.com/MedAmineFouzai/Simple_CRUD_API_MongoDB </td>
 </tr>
 <tr>
 <td> 2) cd Simple_CRUD_API_SQLITE3</td>
@@ -39,5 +39,5 @@
 <img src="https://github.com/MedAmineFouzai/Simple_CRUD_API_MongoDB/blob/master/Captures/Capture.PNG">
   <br>
 <hr>
-<h3>#PS:note that the terminology changes when workin with a non relational database:
-<img src="https://github.com/MedAmineFouzai/Simple_CRUD_API_MongoDB/blob/master/Captures/img2.PNG">
+  <h3>#PS:note that the terminology changes when workin with a non relational database:</h3>
+<img src="https://github.com/MedAmineFouzai/Simple_CRUD_API_MongoDB/blob/master/Captures/img2.png">
