@@ -24,5 +24,20 @@
  </tr>
 </table>
 <hr>
+<h3><a href="https://www.mongodb.com/" >MongoDB</a> is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schema</h3>
 <img src="https://github.com/MedAmineFouzai/Simple_CRUD_API_MongoDB/blob/master/Captures/img.jpg" width="500">
 <h3><a href="https://pymongo.readthedocs.io/en/stable/">PyMongo</a> is a Python distribution containing tools for working with <a href="https://www.mongodb.com/" >MongoDB</a>, and is the recommended way to work with MongoDB from Python.<h3>
+<hr>
+
+<h1>#Connecting To A Database and CRUD Life Cycle:</h1> 
+<h4>-In __init__ the Constructor  of the user class change MongoClient('localhost','27017') to MongoClient('mongodb+srv://USER:Password@cluster0.mongodb.net/ect...') if you are using a MongoDB cloud provider and not working with MongoDB localy on your machine in  <a href="https://github.com/MedAmineFouzai/Simple_CRUD_API_MongoDB/blob/master/models/user.py" > models/user.py </a>
+ </h4> 
+
+ <h4>-the next four methods are basically the entire object life in the Database , in NoSql its pure english written to handle an object like the example below. <h4>
+<h3>ex:</h3>
+<br>
+<img src="https://github.com/MedAmineFouzai/Simple_CRUD_API_MongoDB/blob/master/Captures/Capture.PNG">
+  <br>
+<hr>
+<h3>#PS:note that the terminology changes when workin with a non relational database:
+<img src="https://github.com/MedAmineFouzai/Simple_CRUD_API_MongoDB/blob/master/Captures/img2.PNG">
