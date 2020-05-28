@@ -1,7 +1,10 @@
 # Simple_CRUD_API_MongoDB
-<p>Simple CRUD API  Build With  <a href="https://www.tornadoweb.org/en/stable/">Tornado</a>  Framework And  MongoDB   For The Database</p>
-<hr>
-<h1>#setup:</h1>
+Simple CRUD API  Build With [Tornado](https://www.tornadoweb.org/en/stable/) Framework And  MongoDB   For The Database
+
+------------------------------------
+
+# setup:
+
 <table>
 <tr>
 <td> 1)  git clone https://github.com/MedAmineFouzai/Simple_CRUD_API_MongoDB </td>
@@ -23,21 +26,31 @@
     6) run project with <a href="https://pypi.org/project/torn/">torn cli</a> : <b>#command: [ torn run ] </b>  </td>
  </tr>
 </table>
-<hr>
-<h3><a href="https://www.mongodb.com/" >MongoDB</a> is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schema</h3>
+
+-------------------------------
+
+[MongoDB](https://www.mongodb.com/) is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schema
+
 <img src="https://github.com/MedAmineFouzai/Simple_CRUD_API_MongoDB/blob/master/Captures/img.jpg" width="500">
-<h3><a href="https://pymongo.readthedocs.io/en/stable/">PyMongo</a> is a Python distribution containing tools for working with <a href="https://www.mongodb.com/" >MongoDB</a>, and is the recommended way to work with MongoDB from Python.<h3>
-<hr>
 
-<h1>#Connecting To A Database and CRUD Life Cycle:</h1> 
-<h4>-In __init__ the Constructor  of the user class change MongoClient('localhost','27017') to MongoClient('mongodb+srv://USER:Password@cluster0.mongodb.net/ect...') if you are using a MongoDB cloud provider and not working with MongoDB localy on your machine in  <a href="https://github.com/MedAmineFouzai/Simple_CRUD_API_MongoDB/blob/master/models/user.py" > models/user.py </a>
- </h4> 
+[PyMongo](https://pymongo.readthedocs.io/en/stable/) is a Python distribution containing tools for working with 
+[MongoDB](https://www.mongodb.com/), and is the recommended way to work with MongoDB from Python.<h3>
 
- <h4>-the next four methods are basically the entire object life in the Database , in NoSql its pure english written to handle an object like the example below. <h4>
-<h3>ex:</h3>
-<br>
+-------------------------------------
+
+## Connecting To A Database and CRUD Life Cycle:
+
+In __init__ the Constructor  of the user class change MongoClient('localhost','27017') to MongoClient('mongodb+srv://USER:Password@cluster0.mongodb.net/ect...') if you are using a MongoDB cloud provider and not working with MongoDB localy on your machine in  
+[models/user.py](https://github.com/MedAmineFouzai/Simple_CRUD_API_MongoDB/blob/master/models/user.py) 
+
+ the next four methods are basically the entire object life in the Database , in NoSql its pure english written to handle an object like the example below.
+### ex:
+
+
 <img src="https://github.com/MedAmineFouzai/Simple_CRUD_API_MongoDB/blob/master/Captures/Capture.PNG">
-  <br>
-<hr>
-  <h3>#PS:note that the terminology changes when working with a non relational database:</h3>
+
+-----------------------------------------
+
+PS:note that the terminology changes when working with a non relational database:
+
 <img src="https://github.com/MedAmineFouzai/Simple_CRUD_API_MongoDB/blob/master/Captures/img2.png">
