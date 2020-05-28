@@ -53,7 +53,7 @@ MongoClient('mongodb+srv://USER:Password@cluster0.mongodb.net/ect...')
 if you are using a MongoDB cloud provider and not working with MongoDB localy on your machine
 in [models/user.py](https://github.com/MedAmineFouzai/Simple_CRUD_API_MongoDB/blob/master/models/user.py) 
 
-the next four methods are basically the entire object life in the Database , in NoSql its pure english written to handle an object like the example below.
+The next four methods are basically the entire object life in the Database , in NoSql its pure english written to handle an object like the example below.
 
 ### ex:
 
