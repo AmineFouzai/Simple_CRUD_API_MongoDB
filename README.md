@@ -46,11 +46,39 @@ In __init__ the Constructor  of the user class change MongoClient('localhost','2
  the next four methods are basically the entire object life in the Database , in NoSql its pure english written to handle an object like the example below.
 ### ex:
 
+```python
+class user(object):
+    def __init__(self,first_name=None,last_name=None,date=None):
+        client=MongoClient('localhost', 27017)# or  uri from MongoDB Atlas 
+        self.db=client.user
+        self.first_name=first_name
+        self.last_name=last_name
+        self.date=date
+        
+    def add(self):
+        
+        return self.db.users.insert_one({"first_name":self.first_name,"last_name":self.last_name,"date":self.date})
+        
+    def delete(self,_id):
+        self.db.users.find_one_and_delete({"_id":ObjectId(_id)})
 
-<img src="https://github.com/MedAmineFouzai/Simple_CRUD_API_MongoDB/blob/master/Captures/Capture.PNG">
+    def update(self,_id):
+        self.db.users.find_one_and_replace({"_id":ObjectId(_id)},{"first_name":self.first_name,"last_name":self.last_name,"date":self.date})
+        
+
+    def get(self):
+        data=list()
+        documents=self.db.users.find_raw_batches()
+        for document in documents:
+            data.append(str(decode_all(document)))
+        return data
+```
 
 -----------------------------------------
 
 PS:note that the terminology changes when working with a non relational database:
 
-<img src="https://github.com/MedAmineFouzai/Simple_CRUD_API_MongoDB/blob/master/Captures/img2.png">
+| RDBMS   |      MongoDB      |
+|----------|:-------------:|
+| Table|  Collection |
+| Row |   JSON Document  |
