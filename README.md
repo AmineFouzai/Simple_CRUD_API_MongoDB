@@ -40,10 +40,21 @@ Simple CRUD API  Build With [Tornado](https://www.tornadoweb.org/en/stable/) Fra
 
 ## Connecting To A Database and CRUD Life Cycle:
 
-In __init__ the Constructor  of the user class change MongoClient('localhost','27017') to MongoClient('mongodb+srv://USER:Password@cluster0.mongodb.net/ect...') if you are using a MongoDB cloud provider and not working with MongoDB localy on your machine in  
-[models/user.py](https://github.com/MedAmineFouzai/Simple_CRUD_API_MongoDB/blob/master/models/user.py) 
+In __init__ the Constructor  of the user class change 
 
- the next four methods are basically the entire object life in the Database , in NoSql its pure english written to handle an object like the example below.
+```python
+MongoClient('localhost','27017')
+````
+to
+
+```python
+MongoClient('mongodb+srv://USER:Password@cluster0.mongodb.net/ect...') 
+```
+if you are using a MongoDB cloud provider and not working with MongoDB localy on your machine
+in [models/user.py](https://github.com/MedAmineFouzai/Simple_CRUD_API_MongoDB/blob/master/models/user.py) 
+
+the next four methods are basically the entire object life in the Database , in NoSql its pure english written to handle an object like the example below.
+
 ### ex:
 
 ```python
