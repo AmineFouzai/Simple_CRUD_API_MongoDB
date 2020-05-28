@@ -56,27 +56,40 @@ class user(object):
         self.date=date
         
     def add(self):
-        
-        return self.db.users.insert_one({"first_name":self.first_name,"last_name":self.last_name,"date":self.date})
+    
+        return self.db.users.insert_one({
+         "first_name":self.first_name,
+         "last_name":self.last_name,
+         "date":self.date
+         })
         
     def delete(self,_id):
-        self.db.users.find_one_and_delete({"_id":ObjectId(_id)})
+        self.db.users.find_one_and_delete({
+        "_id":ObjectId(_id)
+        })
 
     def update(self,_id):
-        self.db.users.find_one_and_replace({"_id":ObjectId(_id)},{"first_name":self.first_name,"last_name":self.last_name,"date":self.date})
+        self.db.users.find_one_and_replace({
+          "_id":ObjectId(_id)
+        },
+        { 
+          "first_name":self.first_name,
+          "last_name":self.last_name,
+          "date":self.date
+          })
         
 
     def get(self):
-        data=list()
+        
         documents=self.db.users.find_raw_batches()
-        for document in documents:
-            data.append(str(decode_all(document)))
-        return data
+        return [ str(decode_all(document)) for document in documents]
 ```
 
 -----------------------------------------
 
-PS:note that the terminology changes when working with a non relational database:
+### PS:
+
+note that the terminology changes when working with a non relational database:
 
 | RDBMS   |      MongoDB      |
 |----------|:-------------:|
